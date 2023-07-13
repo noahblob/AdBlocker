@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "AdBlocker",
+    "description": "AdBlocker for Chrome",
+    "version": "0.1.0",
+    "icons": {
+        "16": "/images/clock16.png",
+        "48": "/images/clock48.png",
+        "128": "/images/clock96.png"
+    },
+    "background": {
+        "scripts": [
+            "./background.js"
+        ]
+    },
+    "options": "./options.html",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ]
+}
